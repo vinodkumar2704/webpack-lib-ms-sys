@@ -1,6 +1,7 @@
 // Webpack uses this to work with directories
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyPlugin = require('copy-webpack-plugin')
 // This is the main configuration object.
 // Here, you write different options and tell Webpack what to do
 module.exports = {
@@ -49,6 +50,9 @@ module.exports = {
   plugins:[
     new HtmlWebpackPlugin({
         template:path.resolve(__dirname,'..','./src/index.html'),
+    }),
+    new CopyPlugin({
+      patterns:[{from:'src',to:'dest'}]
     })
   ]
 
