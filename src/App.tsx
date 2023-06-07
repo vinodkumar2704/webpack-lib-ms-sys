@@ -14,7 +14,6 @@ import AddBook from './AddBook'
 // /library/add-book =>
 //
 import { Layout, Space } from 'antd'
-
 const { Header, Content } = Layout
 
 const headerStyle: React.CSSProperties = {
