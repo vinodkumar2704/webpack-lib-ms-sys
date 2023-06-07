@@ -12,4 +12,5 @@ interface BookInterface {
   status: Status
 }
 
-export { Status, BookInterface }
+export { Status }
+export type { BookInterface }
