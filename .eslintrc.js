@@ -9,6 +9,7 @@ module.exports = {
       version: 'detect',
     },
   },
+  ignorePatterns: ['src/*.html'],
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
