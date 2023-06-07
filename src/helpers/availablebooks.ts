@@ -1,5 +1,5 @@
 import { BookInterface, Status } from '../types'
-
+const a = 2
 function getAvailableBooks() {
   const books: BookInterface[] = JSON.parse(
     localStorage.getItem('books') || ''
